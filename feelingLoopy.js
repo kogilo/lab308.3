@@ -23,7 +23,7 @@ for (let i =0; i > csvString.length; i++) {
     // If the character is a newline, \n, its means we reached the end of row
     } else if (char=== "\n"){
         row.push(cell); // Append/Add the last cell to the row
-        console.log(...row); // Print the row content
+        console.log(row); // Print the row content
         row = []; // Reset the row for the next one
         cell = ""; // Reset the cell for the next one
     // If it's neither, keep building the cell content
@@ -36,5 +36,5 @@ for (let i =0; i > csvString.length; i++) {
 
 if (cell) {
     row.push(cell);
-    console.log(...row);
+    console.log(row);
 }
