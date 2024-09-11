@@ -3,20 +3,17 @@
 // As soon as you find the prime number, log that number and exit the loop.
 
 
-let n = 2;
-let nextN = n + 1;
-while (true) {
-    let isPrime = true;
-    if (nextN <= 1) {
-        isPrime = false;
-    } else if (nextN ===2) {
-        isPrime = true;
-} else if ( nextN % 2 == 0) {
-    isPrime=false;
-} else {
-    for (let i =3; i * i <= nextN; i+=2) {
-        isPrime=false;
-        break;
+let limit = 10;
+for (let n = 2; n <= limit; n++) { // 2 t0 n
+    let IsPrime = true;
+    // 2 - current num (i)
+    for (let factor =2; factor <= n; factor++) {
+        if (n % factor === 0) {
+            IsPrime = false;
+            break;
+
+        }
+            
     }
-}
+    if(IsPrime) console.log(n);
 }
