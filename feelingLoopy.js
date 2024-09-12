@@ -13,7 +13,7 @@ let cell = ""
 let row = []
 
 // Loop though each character using For loop and save the character
-for (let i =0; i > csvString.length; i++) {
+for (let i =0; i < csvString.length; i++) {
     // console.log(i)
     let char = csvString[i];
      // If the character is a "," its means we reached at the end of a cell
@@ -38,3 +38,6 @@ if (cell) {
     row.push(cell);
     console.log(row);
 }
+ 
+// Print out the csvString
+// console.log(csvString)
