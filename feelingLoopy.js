@@ -39,5 +39,3 @@ if (cell) {
     console.log(row);
 }
  
-// Print out the csvString
-// console.log(csvString)
